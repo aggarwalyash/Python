@@ -3,7 +3,6 @@ import urllib.request
 from bs4 import BeautifulSoup
 start = int(input())
 end = int(input())
-os.makedirs('xkcd',exist_ok = True)
 for i in range(start,end+1):
     url = "http://xkcd.com/"
     url += str(i) + "/"
