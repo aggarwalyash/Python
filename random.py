@@ -9,13 +9,13 @@ while guess>0:
 	break
     guess_done += 1
     guess -= 1 
-    if (n>=1 and n<25):
+    if (num-n>15):
         print("Your guess is too low")
-    elif (n>=25 and n<50):
+    elif (num-n>0 and num-n<=15):
 	print("Your guess is low")
-    elif (n>=50 and n<75):
+    elif (n-num>25):
 	print("Your guess is high")
-    elif (n>=75 and n<100):
+    elif (n-num>0 and n-num<=25):
 	print("Your guess is too high")
 else:
     print("No more atrempts left. Have a nice day!!!!!!!!")
